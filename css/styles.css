@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Alatsi', sans-serif;
+}
+
+.cover img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.cover .nav {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    position: relative;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.cover .nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: teal;
+    text-decoration: underline teal;
+}
+
+.nav .lef-nav {
+    display: flex;
+}
+
+.nav .l-nav {
+    margin-left: 3vw;
+    padding: 10px 20px;
+}
+
+.nav .r-nav {
+    margin-right: 5vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.cover .nav li {
+    list-style: none;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vh;
+}
+
+.list .img img {
+    width: 30vw;
+    height: 70vh;
+    position: relative;
+    margin-left: 8vw;
+    object-fit: cover;
+    border-radius: 14px;
+    filter: grayscale(40%);
+}
+
+.list .content {
+    margin-right: 10vw;
+    margin-top: 5vh;
+}
+
+.list h1 {
+    width: 500px;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: rgb(146, 145, 145);
+}
+
+.list button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border: 2px solid rgb(136, 136, 136);
+    border-radius: 10px;
+    margin-left: 6vw;
+    font-size: 30px;
+}
+
+.list button:hover {
+    background-color: #959292;
+    color: black;
+    cursor: pointer;
+}
+
+/* ********** Gallery *********** */
+
+.grid {
+    display: grid;
+    margin-top: 11vh;
+    margin-left: 33vw;
+    grid-template-columns: 12vw 12vw 12vw;
+    grid-template-rows: 25vh 25vh 25vh;
+}
+
+.grid img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(214,214,214,1);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(214,214,214,1);
+    box-shadow: 3px 3px 5px 0px rgba(214,214,214,1);
+}
+
+/* ******** Form ******* */
+
+.forms {
+    position: relative;
+    margin-top: 20vh;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    padding: 20px 20px;
+    background-color: #C4C4C4;
+    border-radius: 12px;
+}
+
+label {
+    color: rgb(0, 0, 0);
+}
+
+input[type=text] {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    background-color: #C4C4C4;
+}
+
+input[type=email] {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    background-color: #C4C4C4;
+}
+
+input[type=submit] {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: #C4C4C4;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+input[type=submit]:hover {
+    color: black;
+    background-color: #959292;
+    border: 2px solid #959292;
+    cursor: pointer;
+}
+
+input[type=reset] {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: #C4C4C4;
+    color: rgb(0, 0, 0);
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+input[type=reset]:hover {
+    color: black;
+    background-color: #959292;
+    border: 2px solid #959292;
+    cursor: pointer;
+}
+
+/* ******* About ******** */
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20vh;
+}
+
+.about .dashdetails {
+    color: white;
+    margin-left: 10vw;
+    width: 35vw;
+    font-size: 25px;
+}
+
+.about .dashdetails p {
+    margin-top: 3vh;
+    color: rgb(187, 185, 185);
+    text-shadow:2px 2px 1px black ;
+}
+
+.about img {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-right: 10vw;
+}
+
+#address {
+    position: relative;
+    color: white;
+    margin-top: 25vh;   
+    margin-left: 20vh; 
+}
