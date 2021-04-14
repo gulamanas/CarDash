@@ -103,12 +103,21 @@
 
 /* ********** Gallery *********** */
 
+.gallery {
+    display: flex;
+    margin:8vh auto;
+    width: 900px;
+    background-color: grey;
+    z-index: 1;
+}
+
 .grid {
     display: grid;
-    margin-top: 11vh;
-    margin-left: 33vw;
-    grid-template-columns: 12vw 12vw 12vw;
-    grid-template-rows: 25vh 25vh 25vh;
+    margin-top: 3vh;
+    margin-left: 2vw;
+    grid-template-columns: 11vw 11vw 11vw;
+    grid-template-rows: 22vh 22vh 23vh;
+    overflow: hidden;
 }
 
 .grid img {
@@ -118,6 +127,31 @@
     -webkit-box-shadow: 3px 3px 5px 0px rgba(214,214,214,1);
     -moz-box-shadow: 3px 3px 5px 0px rgba(214,214,214,1);
     box-shadow: 3px 3px 5px 0px rgba(214,214,214,1);
+    filter: grayscale(100%);
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.grid img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+.imageshow {
+    border: none;
+    outline: none;
+}
+
+.imageshow img{
+    height: 300px;
+    width: 350px;
+    position: relative;
+    object-fit: cover;
+    top: 13vh;
+    z-index: 6;
+    border: none;
+    outline: none;
 }
 
 /* ******** Form ******* */
@@ -143,6 +177,7 @@ input[type=text] {
     border: none;
     border-bottom: 2px solid rgb(0, 0, 0);
     background-color: #C4C4C4;
+    outline: none;
 }
 
 input[type=email] {
@@ -152,6 +187,7 @@ input[type=email] {
     border: none;
     border-bottom: 2px solid rgb(0, 0, 0);
     background-color: #C4C4C4;
+    outline: none;
 }
 
 input[type=submit] {
