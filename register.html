@@ -11,17 +11,19 @@
 </head>
 <body>
     <div class="cover">
-        <img src="images/carhome.jpg" alt="" class="bgimg">
-        <nav>
-            <ul class="nav">
-            <div class="lef-nav">
-                <li class="l-nav"><a href="./index.html">HOME</a></li> 
-                <li class="l-nav"><a href="./gallery.html">GALLERY</a></li>
-                <li class="l-nav"><a href="./register.html">REGISTER</a></li>
-                <li class="l-nav"><a href="./about.html">ABOUT</a></li>
+        <nav class="navigation">
+            <div class="burger" onclick="navSlide()">
+              <div class="bar bar1"></div>
+              <div class="bar bar2"></div>
+              <div class="bar bar3"></div>
             </div>
-                <li class="r-nav">CarDash.</li>
-            </ul>
+            <div class="left-nav">
+              <li><a href="./index.html">HOME</a></li>
+              <li><a href="./gallery.html">GALLERY</a></li>
+              <li><a href="./register.html">REGISTER</a></li>
+              <li><a href="./about.html">ABOUT</a></li>
+            </div>
+            <div class="brand-name">CarDash.</div>
         </nav>
         <form action="" class="forms">
             <div class="formcontainer">
@@ -37,5 +39,7 @@
 
         </form>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

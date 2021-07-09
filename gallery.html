@@ -14,32 +14,36 @@
   </head>
   <body>
     <div class="cover">
-      <img src="images/carhome.jpg" alt="" class="bgimg" />
-      <nav>
-        <ul class="nav">
-          <div class="lef-nav">
-            <li class="l-nav"><a href="./index.html">HOME</a></li>
-            <li class="l-nav"><a href="./gallery.html">GALLERY</a></li>
-            <li class="l-nav"><a href="./register.html">REGISTER</a></li>
-            <li class="l-nav"><a href="./about.html">ABOUT</a></li>
-          </div>
-          <li class="r-nav">CarDash.</li>
-        </ul>
-      </nav>
-      <div class="gallery">
-        <div class="grid">
-          <img src="images/car01.jpg" alt="" onclick="showImg(this)" />
-          <img src="images/car02.jpg" alt="" onclick="showImg(this)" />
-          <img src="images/car03.jpg" alt="" onclick="showImg(this)" />
-          <img src="images/car04.jpg" alt="" onclick="showImg(this)" />
-          <img src="images/car05.jpg" alt="" onclick="showImg(this)" />
-          <img src="images/car06.jpg" alt="" onclick="showImg(this)" />
-          <img src="images/car07.jpg" alt="" onclick="showImg(this)" />
-          <img src="images/car08.jpg" alt="" onclick="showImg(this)" />
-          <img src="images/car09.jpg" alt="" onclick="showImg(this)" />
+      <nav class="navigation">
+        <div class="burger" onclick="navSlide()">
+          <div class="bar bar1"></div>
+          <div class="bar bar2"></div>
+          <div class="bar bar3"></div>
         </div>
-        <div class="imageshow">
-            <img class="bigimg"></img>
+        <div class="left-nav">
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./gallery.html">GALLERY</a></li>
+          <li><a href="./register.html">REGISTER</a></li>
+          <li><a href="./about.html">ABOUT</a></li>
+        </div>
+        <div class="brand-name">CarDash.</div>
+    </nav>
+      <div class="gallery">
+        <div class="gallery-container">
+          <div class="grid">
+            <img src="images/car01.jpg" alt="" onclick="showImg(this)" />
+            <img src="images/car02.jpg" alt="" onclick="showImg(this)" />
+            <img src="images/car03.jpg" alt="" onclick="showImg(this)" />
+            <img src="images/car04.jpg" alt="" onclick="showImg(this)" />
+            <img src="images/car05.jpg" alt="" onclick="showImg(this)" />
+            <img src="images/car06.jpg" alt="" onclick="showImg(this)" />
+            <img src="images/car07.jpg" alt="" onclick="showImg(this)" />
+            <img src="images/car08.jpg" alt="" onclick="showImg(this)" />
+            <img src="images/car09.jpg" alt="" onclick="showImg(this)" />
+          </div>
+          <div class="imageshow">
+              <img class="bigimg"></img>
+          </div>
         </div>
       </div>
     </div>
